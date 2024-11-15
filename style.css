@@ -1,0 +1,222 @@
+/* CSS Normalize */
+
+/* Set default margin, padding, and box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font size and line height */
+html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Set default font family */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Remove list styles on all ul and ol elements */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset heading margins */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+/* Remove default button and input styling */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+/* Set images to fit their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove border from images and links with href */
+a img,
+img {
+    border: 0;
+}
+
+/* Set tables to have no border spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* styling sart */
+
+body {
+    background: #626F47 url("./images/dot BG.png") repeat;
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.container,.footer-content {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 46px;
+}
+
+header .logo img{
+    width: 230px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Pastikan elemen ini memenuhi tinggi layar */
+    text-align: center;
+}
+
+main h1{
+    font-size: 96px;
+    font-weight: 800;
+}
+
+footer {
+    background-color: #798645;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    font-weight: 300;
+}
+
+.footer-info p,address {
+    font-size: 12px;
+}
+
+.footer-info address {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    width: 370px;
+    margin-bottom: 30px;
+}
+
+.footer-social h3{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.footer-social div a {
+    margin-right: 30px;
+}
+
+.footer-social img {
+    width: 24px;
+}
+
+/* styling end */
+
+
+/* Responsif untuk layar tablet */
+@media (max-width: 1024px) {
+    .container, .footer-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        font-size: 72px;
+    }
+
+    .footer-logo {
+        width: 250px;
+    }
+}
+
+/* Responsif untuk layar ponsel */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 180px;
+    }
+
+    main h1 {
+        font-size: 48px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-social h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-social div a {
+        margin-right: 15px;
+    }
+
+    .footer-info p, address {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Responsif untuk layar ponsel kecil */
+@media (max-width: 480px) {
+    header .logo img {
+        width: 150px;
+    }
+
+    main h1 {
+        font-size: 36px;
+    }
+
+    .footer-social img {
+        width: 20px;
+    }
+
+    .footer-info p, address {
+        font-size: 12px;
+    }
+}
