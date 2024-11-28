@@ -78,6 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -91,23 +92,604 @@ body {
 
 header{
     margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /*Posisidefaultsebelumscroll*/width: 100%;
+    z-index: 10;
+    /*Pastikanheaderberadadiataskontenlainnya*/
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
+
+header.sticky {
+    position: fixed; /* Buat header sticky */
+    top: 0; /* Letakkan di atas layar */
+    left: 0;
+    background-color: #626F47; /* Warna background sticky */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+    margin-top: 0;
+    padding: 30px 220px;
+}
+
 
 header .logo img{
     width: 230px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks putih */
+    font-weight: 400; /* Font-weight regular (400) saat tidak di-hover */
+    opacity: 0.5; /* Opacity 50% saat tidak di-hover */
+    transition: all 0.3s ease; /* Efek transisi untuk hover */
+}
+
+nav ul li a:hover {
+    opacity: 1; /* Opacity 100% saat di-hover */
+    font-weight: 700; /* Font-weight bold (700) saat di-hover */
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh; /* Pastikan elemen ini memenuhi tinggi layar */
     text-align: center;
+    flex-direction: column;
 }
 
-main h1{
-    font-size: 96px;
+/* Headline Section */
+.headline {
+    margin:100px 0;
+}
+
+.headline-img img {
+    width: 100vw; /* Memenuhi seluruh lebar viewport (layar) */
+    margin-left: -50vw; /* Geser gambar ke kiri untuk keluar dari container */
+    position: relative; /* Pastikan posisi relatif untuk memungkinkan keluar dari container */
+    left: 50%; /* Geser gambar ke tengah layar */
+    max-width: 100vw;
+    z-index: 1;
+}
+
+
+/* Why Us Section */
+#why-us {
+    width: 100vw;
+    padding: 100px 0;
+    background-color: #FEFAE0;
+    background-image: url("./images/Why us-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#why-us .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.why-us-title {
+    background-color: #626F47;
+    border-radius: 15px;
+    transform: rotate(4.26deg);
+    -webkit-transform: rotate(4.26deg);
+    -moz-transform: rotate(4.26deg);
+    -ms-transform: rotate(4.26deg);
+    -o-transform: rotate(4.26deg);
+    padding: 40px 28px 84px 42px ;
+}
+
+.why-us-title h1 {
+    font-size: 90px;
     font-weight: 800;
+}
+
+.decorations {
+    position: relative;
+}
+
+.decor {
+    position: absolute;
+}
+
+.decor-1 {
+    left: -20px;
+    top: -130px;
+}
+
+.decor-2 {
+    right: -38px;
+    top: -162px;
+}
+
+.decor-3 {
+    left: 10px;
+    top: 30px;
+}
+
+.decor-4 {
+    right: -30px;
+    top: 27.5px;
+    border-bottom-right-radius: 22px;
+    transform: rotate(-4deg);
+}
+
+.why-us-left p { 
+    color: #626F47;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 180px;
+    margin-top: 150px;
+}
+
+.why-us-right h2 {
+    color: #00252E;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.why-us-right p {
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 18px;
+}
+
+.why-us-right .card p:nth-child(3){
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.why-us-right .card {
+    text-align: left;
+    padding: 24px 24px 50px 24px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.why-us-right .card:nth-child(1){
+    background: url("./images/value\ 01.png") no-repeat;
+    background-position: left;
+    background-size: 85% 100%;
+    width: 100%;
+    height: auto;
+    transform: rotate(-3.5deg);
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    -ms-transform: rotate(-3.5deg);
+    -o-transform: rotate(-3.5deg);
+    z-index: 4;
+}
+
+.why-us-right .card:nth-child(2){
+    background: url("./images/value\ 02.png") no-repeat;
+    background-position: left;
+    background-size: 85% 100%;
+    width: 100%;
+    height: auto;
+    transform: rotate(.72deg);
+    -webkit-transform: rotate(.72deg);
+    -moz-transform: rotate(.72deg);
+    -ms-transform: rotate(.72deg);
+    -o-transform: rotate(.72deg);
+    z-index: 3;
+    top: -25px;
+    left: 60px;
+}
+
+.why-us-right .card:nth-child(3){
+    background: url("./images/value\ 03.png") no-repeat;
+    background-position: left;
+    background-size: 85% 100%;
+    width: 100%;
+    height: auto;
+    transform: rotate(3.83deg);
+    -webkit-transform: rotate(3.83deg);
+    -moz-transform: rotate(3.83deg);
+    -ms-transform: rotate(3.83deg);
+    -o-transform: rotate(3.83deg);
+    z-index: 2;
+    top: -50px;
+}
+
+.why-us-right .card:nth-child(4){
+    background: url("./images/value\ 04.png") no-repeat;
+    background-position: left;
+    background-size: 85% 100%;
+    width: 100%;
+    height: auto;
+    transform: rotate(-2.19deg);
+    -webkit-transform: rotate(-2.19deg);
+    -moz-transform: rotate(-2.19deg);
+    -ms-transform: rotate(-2.19deg);
+    -o-transform: rotate(-2.19deg);
+    z-index: 1;
+    top: -75px;
+    right: 20px;
+}
+
+/* Service section */
+#services {
+    width: 100vw;
+    padding: 100px 0;
+    background-color: #FEFAE0;
+    background-image: url("./images/Services-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.service-title {
+    width: 450px;
+    display: flex;
+    justify-self: end;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+.service-title h1 {
+    background-image: url("./images/Frame\ 68.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    font-size: 90px;
+    font-weight: 800;
+    padding: 27px 46px 70px 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transform: rotate(-3.26deg);
+    -webkit-transform: rotate(-3.26deg);
+    -moz-transform: rotate(-3.26deg);
+    -ms-transform: rotate(-3.26deg);
+    -o-transform: rotate(-3.26deg);
+}
+
+.service-subtitle {
+    margin-top: 100px;
+}
+
+.service-subtitle p{
+    color: #626F47;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.service-subtitle p:nth-child(2) {
+    margin-left: 92px;
+    
+}
+
+.service-subtitle p:nth-child(3) {
+    margin-left: 350px;
+}
+
+.service-card-container {
+    display: flex;
+    margin: 200px 0;
+}
+
+.service-card {
+    margin-right: 50px;
+    width: 300px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.service-card {
+    font-size: 25px;
+    font-weight: 500;
+    color: #00252E;
+    padding: 18px 10px;
+    position: relative;
+}
+
+.uiux,.illustration,.graphic,.website {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.uiux {
+    background-image: url("./images/Group\ 12.png");
+    top: -60px;
+    transform: rotate(-6.63deg);
+    -webkit-transform: rotate(-6.63deg);
+    -moz-transform: rotate(-6.63deg);
+    -ms-transform: rotate(-6.63deg);
+    -o-transform: rotate(-6.63deg);
+}
+
+.uiux::after {
+    content: "";
+    background: url("./images/Group\ 21.png") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 120px;
+    height: 97px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.illustration {
+    background-image: url("./images/Group\ 13.png");
+    top: -60px;
+    transform: rotate(4.25deg);
+    -webkit-transform: rotate(4.25deg);
+    -moz-transform: rotate(4.25deg);
+    -ms-transform: rotate(4.25deg);
+    -o-transform: rotate(4.25deg);
+}
+
+.illustration::after {
+    content: "";
+    background: url("./images/Group\ 23.png") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 120px;
+    height: 97px;
+    position: absolute;
+    bottom: 15px;
+    left: -35px;
+}
+
+.graphic{
+    background-image: url("./images/Group\ 11.png");
+    top: 100px;
+    transform: rotate(3.1deg);
+    -webkit-transform: rotate(3.1deg);
+    -moz-transform: rotate(3.1deg);
+    -ms-transform: rotate(3.1deg);
+    -o-transform: rotate(3.1deg);
+}
+
+.graphic::after {
+    content: "";
+    background: url("./images/Group\ 22.png") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 120px;
+    height: 97px;
+    position: absolute;
+    bottom: 50px;
+    left: -25px;
+}
+
+.website {
+    background-image: url("./images/Group\ 14.png");
+    top: 100px;
+    transform: rotate(-3.25deg);
+    -webkit-transform: rotate(-3.25deg);
+    -moz-transform: rotate(-3.25deg);
+    -ms-transform: rotate(-3.25deg);
+    -o-transform: rotate(-3.25deg);
+}
+
+.website::after {
+    content: "";
+    background: url("./images/Group\ 24.png") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 120px;
+    height: 97px;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
+
+/* our work Section */
+.our-work-title {
+    width: 450px;
+    display: flex;
+    justify-self: end;
+    margin: 150px auto;
+}
+
+.our-work-title h1{
+    background-image: url("./images/Frame\ 69.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #00303C;
+    font-size: 89px;
+    font-weight: 800;
+    padding: 27px 40px 68px 21px;
+    border-radius: 15px;
+    transform: rotate(4.93deg);
+    -webkit-transform: rotate(4.93deg);
+    -moz-transform: rotate(4.93deg);
+    -ms-transform: rotate(4.93deg);
+    -o-transform: rotate(4.93deg);
+}
+
+.our-work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat dua kolom */
+    grid-template-rows: repeat(3, 1fr); /* Membuat dua baris */
+    row-gap: 250px;
+}
+
+.our-work-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.our-work-card img {
+    width: 350px;
+    height: 450px;
+}
+
+.our-work-card p {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-align: left;
+    left: 50px;
+    bottom: 35px;
+}
+
+.our-work-card:nth-child(11) p {
+    bottom: 65px;
+}
+
+.our-work-card:nth-child(1),.our-work-card:nth-child(4),.our-work-card:nth-child(7),.our-work-card:nth-child(10) {
+    transform: rotate(-1.8deg);
+    -webkit-transform: rotate(-1.8deg);
+    -moz-transform: rotate(-1.8deg);
+    -ms-transform: rotate(-1.8deg);
+    -o-transform: rotate(-1.8deg);
+    top: -100px;
+    right: -40px;
+}
+.our-work-card:nth-child(2),.our-work-card:nth-child(5),.our-work-card:nth-child(8),.our-work-card:nth-child(11) {
+    transform: rotate(3.48deg);
+    -webkit-transform: rotate(3.48deg);
+    -moz-transform: rotate(3.48deg);
+    -ms-transform: rotate(3.48deg);
+    -o-transform: rotate(3.48deg);
+    top: 40px;
+    z-index: 1;
+}
+.our-work-card:nth-child(3),.our-work-card:nth-child(6),.our-work-card:nth-child(9),.our-work-card:nth-child(12) {
+    transform: rotate(-2.96deg);
+    -webkit-transform: rotate(-2.96deg);
+    -moz-transform: rotate(-2.96deg);
+    -ms-transform: rotate(-2.96deg);
+    -o-transform: rotate(-2.96deg);
+    top: -100px;
+    left: -40px;
+}
+
+
+/* lets-work */
+
+#lets-work {
+    width: 100vw;
+    padding: 100px 0;
+    background-color: #FEFAE0;
+    background-image: url(./images/lets-work.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.lets-work-title {
+    font-size: 90px;
+    color: #798645;
+    font-weight: 700;
+}
+
+.lets-work-title div:nth-child(1) {
+    transform: rotate(-2.01deg);
+    -webkit-transform: rotate(-2.01deg);
+    -moz-transform: rotate(-2.01deg);
+    -ms-transform: rotate(-2.01deg);
+    -o-transform: rotate(-2.01deg);
+}
+
+.lets-work-title div:nth-child(3) {
+    transform: rotate(3.69deg);
+    -webkit-transform: rotate(3.69deg);
+    -moz-transform: rotate(3.69deg);
+    -ms-transform: rotate(3.69deg);
+    -o-transform: rotate(3.69deg);
+    background: url("./images/Frame\ 75.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #00252E;
+    margin-top: -50px;
+    margin-left: 150px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.d-flex div:nth-child(1){
+    transform: rotate(3.36deg);
+    -webkit-transform: rotate(3.36deg);
+    -moz-transform: rotate(3.36deg);
+    -ms-transform: rotate(3.36deg);
+    -o-transform: rotate(3.36deg);
+}
+
+.d-flex div:nth-child(2) {
+    z-index: 1;
+    margin-left: -100px;
+    background-image: url(./images/Frame\ 74.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #00252E;
+    padding: 15px 40px 40px 32px;
+    transform: rotate(-4.98deg);
+    -webkit-transform: rotate(-4.98deg);
+    -moz-transform: rotate(-4.98deg);
+    -ms-transform: rotate(-4.98deg);
+    -o-transform: rotate(-4.98deg);
+}
+
+.cta {
+    display: flex;
+    justify-content: flex-end;
+    gap: 34px;
+}
+
+.cta p {
+    text-align: left;
+}
+
+.cta-button  {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: none;
+    padding: 14px 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.cta-button img {
+    position: absolute;
+    top: -25px; /* Atur posisi gambar agar muncul di atas tombol */
+    right: 0;
+    width: 30px;
+}
+
+.cta-button:hover {
+    background-color: #c9a68b; /* Warna hover */
+    color: white;
 }
 
 footer {
