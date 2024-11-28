@@ -248,6 +248,28 @@
                 header.classList.remove("sticky");
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            // Menambahkan event listener klik untuk setiap link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    // Menghapus class 'active' dari semua link
+                    navLinks.forEach(link => link.classList.remove('active'));
+
+                    // Menambahkan class 'active' pada link yang diklik
+                    link.classList.add('active');
+                });
+            });
+
+            // Menambahkan class 'active' pada link yang sesuai dengan halaman yang sedang aktif
+            navLinks.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        });
     </script>
 </body>
 </html>
