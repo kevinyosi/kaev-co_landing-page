@@ -48,10 +48,10 @@ export default function FooterFour() {
                     risus in hend rerit.
                   </p>
                   <Link className="tp-footer-3-logo p-relative" href="/">
-                    <Image src={logo} alt="logo" />
+                    <Image src={logo} alt="logo" width={160}/>
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Themepure <br /> © All rights reserved
+                    {new Date().getFullYear()} Kaev & Co <br /> © All rights reserved
                   </p>
                 </div>
               </div>

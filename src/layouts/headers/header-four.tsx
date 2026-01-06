@@ -28,12 +28,12 @@ const {isSticky, headerFullWidth, adjustMenuBackground} = useStickyHeader(20);
           <div className="container container-1740">
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
-                <div className="tp-header-logo tp-header-3-logo">
+                <div className="tp-header-3-logo">
                   <Link className="logo-1" href="/">
-                    <Image src={logo_1} alt="logo" />
+                    <Image src={logo_1} alt="logo" width={160}/>
                   </Link>
                   <Link className="logo-2" href="/">
-                    <Image src={logo_2} alt="logo" />
+                    <Image src={logo_2} alt="logo" width={160}/>
                   </Link>
                 </div>
               </div>
