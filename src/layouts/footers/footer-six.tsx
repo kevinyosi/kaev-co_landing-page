@@ -119,7 +119,7 @@ export default function FooterSix() {
               <div className="col-xl-4 col-lg-5 col-md-6">
                 <div className="tp-copyright-2-left text-center text-md-start">
                   <p className="mb-0">
-                    All rights reserved — {new Date().getFullYear()} © Themepure
+                    All rights reserved — {new Date().getFullYear()} © Kaev & Co
                   </p>
                 </div>
               </div>

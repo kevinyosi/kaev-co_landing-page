@@ -13,12 +13,16 @@
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
             z-index: 999;
             @media #{$xs}{
                 top: -6px;
             }
             @media #{$sm}{
                 top: 0px;
+            }
+            & img{
+                width: 100%;
             }
             & .img-2{
                 display: none;
@@ -28,12 +32,16 @@
             position: absolute;
             bottom: -1px;
             left: 0;
+            width: 100%;
             z-index: 2;
             @media #{$xs}{
                 bottom: -6px;
             }
             @media #{$sm}{
                 bottom: -1px;
+            }
+            & img{
+                width: 100%;
             }
             & .img-2{
                 display: none;

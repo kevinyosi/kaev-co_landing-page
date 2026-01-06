@@ -62,13 +62,15 @@ export default function FooterFour() {
                   <h4 className="tp-footer-3-title">Contact</h4>
                   <div className="tp-footer-2-contact-item">
                     <span>
-                      <Link href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</Link>
+                      <Link href="#"
+                      target="_blank" rel="noopener noreferrer">
+                        PENDIDIKAN II, SADEWA GREEN MANSION 20, DENPASAR, BALI
+                      </Link>
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <Link href="tel:+725214456">+ 725 214 456</Link></span>
-                    <span>E: <Link href="mailto:contact@liko.com">contact@liko.com</Link></span>
+                    <span>P: <Link href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">+ 62 881 03707 4906</Link></span>
+                    <span>E: <Link href="mailto:kaevnco@gmail.com">kaevnco@gmail.com</Link></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">

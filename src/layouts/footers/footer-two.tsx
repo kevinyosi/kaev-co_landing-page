@@ -26,7 +26,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 {!whiteFooter && (
                   <div className="tp-footer-2-widget-logo">
                     <Link href="/">
-                      <Image src={logo} alt="logo" />
+                      <Image src={logo} alt="logo"/>
                     </Link>
                   </div>
                 )}
@@ -67,21 +67,21 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 <div className="tp-footer-2-contact-item">
                   <span>
                     <Link
-                      href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
+                      href="#"
                       target="_blank"
                     >
-                      740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK
+                      PENDIDIKAN II, SADEWA GREEN MANSION 20, DENPASAR, BALI
                     </Link>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <Link href="tel:+725214456">P: + 725 214 456</Link>
+                    <Link href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">P: + 62 881 03707 4906</Link>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <Link href="mailto:contact@liko.com">E: contact@liko.com</Link>
+                    <Link href="mailto:kaevnco@gmail.com">E: kaevnco@gmail.com</Link>
                   </span>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
                 <p>
-                  All rights reserved — {new Date().getFullYear()} © Themepure
+                  All rights reserved — {new Date().getFullYear()} © Kaev & Co
                 </p>
               </div>
             </div>

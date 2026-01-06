@@ -111,7 +111,7 @@ export default function FooterOne() {
               <div className="col-xl-6 col-md-8">
                 <div className="tp-copyright-text text-center text-md-end">
                   <p>
-                    Copyright © {new Date().getFullYear()} Themepure. All rights
+                    Copyright © {new Date().getFullYear()} Kaev & Co. All rights
                     reserved.
                   </p>
                 </div>

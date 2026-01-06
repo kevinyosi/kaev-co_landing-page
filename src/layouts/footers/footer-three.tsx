@@ -101,7 +101,7 @@ export default function FooterThree() {
           <div className="row align-items-center">
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
-                <p>All rights reserved — {new Date().getFullYear()} © Themepure</p>
+                <p>All rights reserved — {new Date().getFullYear()} © Kaev & Co</p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">
