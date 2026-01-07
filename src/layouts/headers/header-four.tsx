@@ -47,23 +47,23 @@ const {isSticky, headerFullWidth, adjustMenuBackground} = useStickyHeader(20);
                         {/* header menus */}
                       </nav>
                     </div>
-                    <div className="tp-header-3-cart p-relative">
+                    {/* <div className="tp-header-3-cart p-relative">
                       <button className="cartmini-open-btn" onClick={() => setOpenCartMini(true)}>
                         <span>
                           <Cart clr="white" />
                         </span>
                         <em>0</em>
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                   <div className="tp-header-3-social d-none d-sm-block">
-                    <Link href="#">
+                    {/* <Link href="#">
                       <i className="fa-brands fa-twitter"></i>
-                    </Link>
+                    </Link> */}
                     <Link href="#">
                       <i className="fa-brands fa-facebook"></i>
                     </Link>

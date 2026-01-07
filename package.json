@@ -1,6 +1,6 @@
 {
-  "name": "liko-next-js",
-  "version": "0.1.2",
+  "name": "kaev-co",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

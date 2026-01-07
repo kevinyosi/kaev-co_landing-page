@@ -27,7 +27,7 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
           <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="tp-offcanvas-logo">
               <Link href="#">
-                <Image src={logo} alt="logo" />
+                <Image src={logo} alt="logo"/>
               </Link>
             </div>
             <div className="tp-offcanvas-close">
@@ -65,13 +65,13 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
 
               <ul>
                 <li>
-                  <Link href="tel:1245654">+ 4 20 7700 1007</Link>
+                  <Link href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">+ 62 881 03707 4906</Link>
                 </li>
                 <li>
-                  <Link href="mailto:hello@diego.com">hello@diego.com</Link>
+                  <Link href="mailto:kaevnco@gmail.com">kaevnco@gmail.com</Link>
                 </li>
                 <li>
-                  <Link href="#">Avenue de Roma 158b, Lisboa</Link>
+                  <Link href="#">Denpasar, Bali</Link>
                 </li>
               </ul>
             </div>
@@ -81,7 +81,7 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
                 <li>
                   <Link href="#"><InstagramTwo /></Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="#"><Dribble /></Link>
                 </li>
                 <li>
@@ -89,7 +89,7 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
                 </li>
                 <li>
                   <Link href="#"><Youtube /></Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
