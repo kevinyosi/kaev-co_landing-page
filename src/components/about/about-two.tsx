@@ -41,7 +41,7 @@ export default function AboutTwo() {
                       Maecenas varius tortor nibh, sit amet tempor nibh finibus
                       et. Aenean eu enim justo.
                     </p>
-                    <Link href="/about-us">Read more About</Link>
+                    <Link href="/about">Read more About</Link>
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">

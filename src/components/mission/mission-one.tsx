@@ -44,7 +44,7 @@ export default function MissionOne() {
               <div className="tp-hover-btn-wrapper tp_fade_bottom">
                 <Link
                   className="tp-btn-circle-2 tp-hover-btn-item tp-hover-btn"
-                  href="/about-us"
+                  href="/about"
                 >
                   <span>
                     <UpArrow />

@@ -63,7 +63,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                 <div className="tp-project-3-btn-box">
                   <Link
                     className="tp-btn-zikzak p-relative"
-                    href="/portfolio-wrapper"
+                    href="/portfolio"
                   >
                     <span className="zikzak-content">
                       See <br /> All Project

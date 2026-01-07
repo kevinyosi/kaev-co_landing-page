@@ -50,7 +50,7 @@ export default function AboutThree() {
                 we’re all about digital experiences. The most creative idea and
                 the most perfect execution mean nothing.
               </p>
-              <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
+              <Link className="tp-btn-black-2 tp_fade_bottom" href="/about">
                 About Us
                 <span className="p-relative">
                   <RightArrowTwo />

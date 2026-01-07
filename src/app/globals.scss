@@ -55,3 +55,42 @@
   bottom: 0;
   z-index: -1;
 }
+
+// Custom Header Menu Active & Hover Styles
+.tp-main-menu-content ul li a,
+.tp-header-3-menu ul li a {
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+  
+  &::before {
+    display: block;
+    content: attr(data-text);
+    font-weight: 700;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover,
+  &.active {
+    font-weight: 700 !important;
+    
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}

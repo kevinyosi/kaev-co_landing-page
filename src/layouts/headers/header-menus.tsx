@@ -2,12 +2,22 @@ import banner1 from "../../../public/assets/img/menu/shop-menu/banner-1.jpg";
 import menu_data from "@/data/menu-data";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 const HeaderMenus = () => {
+  const pathname = usePathname() || "";
+  
   return (
     <ul>
       {menu_data.map((menu) => (
         <li key={menu.id} className="has-dropdown">
-          <Link href={menu.link}>{menu.title}</Link>
+          <Link 
+            href={menu.link} 
+            data-text={menu.title}
+            className={(pathname === menu.link || (pathname.startsWith(menu.link) && menu.link !== '/')) ? 'active' : ''}
+          >
+            {menu.title}
+          </Link>
           {menu.home_menus ? (
             <div className="tp-submenu submenu tp-mega-menu">
               <div className="tp-menu-fullwidth">

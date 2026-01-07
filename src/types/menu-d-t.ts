@@ -1,4 +1,5 @@
 export interface IMenuDT {
+  has_dropdown: any;
   id: number;
   title: string;
   link: string;
