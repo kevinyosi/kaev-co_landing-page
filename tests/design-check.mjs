@@ -55,6 +55,22 @@ const checks = [
         name: 'adds CSS-only reveal motion',
         pass: /@keyframes\s+revealUp/.test(css) && /\.reveal/.test(css),
     },
+    {
+        name: 'includes an accessible hamburger menu button',
+        pass: /class="menu-toggle"/.test(html) && /aria-controls="primary-navigation"/.test(html) && /aria-expanded="false"/.test(html),
+    },
+    {
+        name: 'mobile navigation can be opened with stateful CSS',
+        pass: /\.site-header\[data-menu-open="true"\]\s+\.site-nav/.test(css) && /\.menu-toggle/.test(css),
+    },
+    {
+        name: 'javascript toggles the mobile menu state',
+        pass: /menuToggle\.addEventListener\('click'/.test(html) && /aria-expanded/.test(html) && /data-menu-open/.test(html),
+    },
+    {
+        name: 'portfolio uses current real website screenshots',
+        pass: /portfolio-bidc-bali\.png/.test(html) && /portfolio-bali-tao-center\.png/.test(html) && /portfolio-mahkota-selera\.png/.test(html) && /portfolio-king-trading-dashboard\.png/.test(html),
+    },
 ];
 
 const failures = checks.filter((check) => !check.pass);
