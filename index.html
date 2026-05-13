@@ -6,52 +6,79 @@
     <meta name="description" content="Kaev &amp; Co. is a Bali software house designing and building web apps, dashboards, booking systems, and product websites from real workflows.">
     <meta property="og:title" content="Kaev &amp; Co. | Software House in Bali">
     <meta property="og:description" content="Custom software for teams that need clearer workflows, better screens, and fewer manual steps.">
-    <meta property="og:image" content="./images/work10.png">
+    <meta property="og:image" content="./images/portfolio-king-trading-dashboard.png">
     <title>Kaev &amp; Co. | Software House in Bali</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/kaev-favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
     <header class="site-header" data-elevated="false" data-menu-open="false">
         <a class="brand" href="#home" aria-label="Kaev & Co. home">
             <img src="./images/Logo sejajar1.png" alt="KAEV & CO.">
         </a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
         <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
             <a class="active" href="#home">Home</a>
             <a href="#process">Process</a>
             <a href="#services">Services</a>
             <a href="#work">Work</a>
         </nav>
-        <a class="nav-cta" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">Start a build</a>
+        <div class="status-chip" role="status" aria-label="Studio status">
+            <span class="dot" aria-hidden="true"></span>
+            <span><span id="bali-time">--:--</span> WITA · open</span>
+        </div>
+        <a class="nav-cta" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">
+            Start a build <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <main id="main-content">
         <section class="hero" id="home">
             <div class="container hero-grid">
-                <div class="hero-copy reveal">
-                    <p class="eyebrow">Bali software house</p>
-                    <h1>Custom software for manual work.</h1>
+                <div class="hero-copy">
+                    <p class="eyebrow">Bali · software house</p>
+                    <h1>Custom software for <em>manual</em> work.</h1>
                     <p class="hero-text">We turn repeated tasks, messy handoffs, and scattered spreadsheets into web apps, dashboards, booking tools, and product websites.</p>
                     <div class="hero-actions">
-                        <a class="button primary" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">Plan a build</a>
-                        <a class="button quiet" href="#work">Review work</a>
+                        <a class="button primary" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">
+                            Plan a build <span class="arrow" aria-hidden="true">→</span>
+                        </a>
+                        <a class="button quiet" href="#work">
+                            Review work <span class="arrow" aria-hidden="true">↓</span>
+                        </a>
                     </div>
+                    <dl class="hero-meta">
+                        <div>
+                            <dt>Founded</dt>
+                            <dd>Bali, 2023</dd>
+                        </div>
+                        <div>
+                            <dt>Shipped</dt>
+                            <dd>12+ products</dd>
+                        </div>
+                        <div>
+                            <dt>Typical scope</dt>
+                            <dd>Audit → build → release</dd>
+                        </div>
+                    </dl>
                 </div>
 
-                <aside class="workflow-panel reveal" aria-label="Workflow audit summary">
+                <aside class="workflow-panel" aria-label="Workflow audit summary">
                     <div class="panel-label">
-                        <span>Workflow audit</span>
-                        <strong>01</strong>
+                        <span class="left">
+                            <span class="dot" aria-hidden="true"></span>Workflow audit
+                        </span>
+                        <strong>01 / 04</strong>
                     </div>
                     <div class="workflow-before-after">
                         <div>
@@ -72,47 +99,87 @@
                             <dt>Build focus</dt>
                             <dd>flow first, interface second</dd>
                         </div>
+                        <div>
+                            <dt>Stack</dt>
+                            <dd>web · responsive · auth-aware</dd>
+                        </div>
                     </dl>
+                    <div class="panel-footer">
+                        <span>Now in studio</span>
+                        <a href="#work">KITE v2 — King Trading →</a>
+                    </div>
                 </aside>
             </div>
         </section>
 
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Web apps</span>
+                <span>Admin <em>portals</em></span>
+                <span>Booking systems</span>
+                <span>Operational <em>dashboards</em></span>
+                <span>Internal tools</span>
+                <span>Product <em>websites</em></span>
+                <span>Field operations</span>
+                <span>Reporting flows</span>
+                <span>Web apps</span>
+                <span>Admin <em>portals</em></span>
+                <span>Booking systems</span>
+                <span>Operational <em>dashboards</em></span>
+                <span>Internal tools</span>
+                <span>Product <em>websites</em></span>
+                <span>Field operations</span>
+                <span>Reporting flows</span>
+            </div>
+        </div>
+
         <section class="outcome-strip" aria-label="Project outcomes">
-            <div class="container outcome-grid">
-                <p>What changes after the build</p>
-                <span>fewer manual steps</span>
-                <span>clearer handoffs</span>
-                <span>screens people understand</span>
+            <div class="container">
+                <h3 class="reveal">What <em>changes</em> after the build —</h3>
+                <ul class="outcome-list stagger">
+                    <li class="reveal">
+                        <span class="num">01</span>
+                        <span class="text">Fewer manual steps</span>
+                    </li>
+                    <li class="reveal">
+                        <span class="num">02</span>
+                        <span class="text">Clearer handoffs</span>
+                    </li>
+                    <li class="reveal">
+                        <span class="num">03</span>
+                        <span class="text">Screens people understand</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="process section" id="process">
-            <div class="container section-split">
-                <div class="section-copy reveal">
+            <div class="container">
+                <div class="process-copy reveal">
                     <p class="eyebrow dark">process</p>
-                    <h2>Good UX starts before the first screen.</h2>
-                    <p>We start with the job users need to finish, then design the shortest path through the product.</p>
+                    <h2 class="section-headline">Good UX starts <em>before</em> the first screen.</h2>
+                    <p class="section-lede">We start with the job users need to finish, then design the shortest path through the product.</p>
                 </div>
-                <div class="ux-path reveal">
-                    <article>
-                        <span>01</span>
-                        <h3>Clarify the task</h3>
-                        <p>Define users, decisions, states, and success conditions.</p>
+                <div class="timeline" id="timeline">
+                    <article class="timeline-step reveal" data-step="1">
+                        <span class="num">01 · audit</span>
+                        <h3>Clarify the <em>task</em></h3>
+                        <p>Define users, decisions, states, and the conditions that count as success. Before designing a screen, agree on what the screen has to settle.</p>
                     </article>
-                    <article>
-                        <span>02</span>
-                        <h3>Prototype the flow</h3>
-                        <p>Turn the task into screens, hierarchy, and interaction rules.</p>
+                    <article class="timeline-step reveal" data-step="2">
+                        <span class="num">02 · design</span>
+                        <h3>Prototype the <em>flow</em></h3>
+                        <p>Turn the task into screens, hierarchy, and interaction rules. The prototype answers movement and shape before we touch a single pixel of polish.</p>
                     </article>
-                    <article>
-                        <span>03</span>
-                        <h3>Build the system</h3>
-                        <p>Develop the interface, data paths, responsive behavior, and edge states.</p>
+                    <article class="timeline-step reveal" data-step="3">
+                        <span class="num">03 · build</span>
+                        <h3>Build the <em>system</em></h3>
+                        <p>Develop the interface, data paths, responsive behavior, and edge states. The system is real software, in production, not a demo.</p>
                     </article>
-                    <article>
-                        <span>04</span>
-                        <h3>Review with users</h3>
-                        <p>Adjust copy, layout, and logic before release.</p>
+                    <article class="timeline-step reveal" data-step="4">
+                        <span class="num">04 · review</span>
+                        <h3>Review with <em>users</em></h3>
+                        <p>Adjust copy, layout, and logic before release. Watch real users finish the task; ship the version that actually works for them.</p>
                     </article>
                 </div>
             </div>
@@ -120,27 +187,62 @@
 
         <section class="services section" id="services">
             <div class="container">
-                <div class="services-head reveal">
-                    <p class="eyebrow dark">services</p>
-                    <h2>Build the tool, the interface, and the page around it.</h2>
+                <div class="services-head">
+                    <p class="eyebrow dark reveal">services</p>
+                    <h2 class="section-headline reveal">Build the tool, the <em>interface</em>, and the page around it.</h2>
                 </div>
-                <div class="service-matrix reveal">
-                    <article class="service-primary">
-                        <span>Product software</span>
-                        <h3>Web apps, admin portals, booking systems, and internal tools.</h3>
-                        <p>For teams outgrowing manual coordination or one-size-fits-all software.</p>
+                <div class="service-list stagger">
+                    <article class="service-row reveal">
+                        <span class="num">01</span>
+                        <div>
+                            <h3 class="name">Product <em>software</em></h3>
+                            <div class="tags">
+                                <span>web apps</span>
+                                <span>admin portals</span>
+                                <span>booking</span>
+                            </div>
+                        </div>
+                        <p class="desc">Web apps, admin portals, booking systems, and internal tools — for teams outgrowing manual coordination or one-size-fits-all software.</p>
+                        <span class="arrow" aria-hidden="true">→</span>
                     </article>
-                    <article>
-                        <span>UX and UI</span>
-                        <h3>Flows, wireframes, components, and responsive states.</h3>
+                    <article class="service-row reveal">
+                        <span class="num">02</span>
+                        <div>
+                            <h3 class="name">UX and <em>UI</em></h3>
+                            <div class="tags">
+                                <span>flows</span>
+                                <span>wireframes</span>
+                                <span>responsive</span>
+                            </div>
+                        </div>
+                        <p class="desc">Flows, wireframes, components, and responsive states. The structure your team can keep building on after we hand it over.</p>
+                        <span class="arrow" aria-hidden="true">→</span>
                     </article>
-                    <article class="service-dark">
-                        <span>Dashboards</span>
-                        <h3>Readable data views for operations, inventory, and reporting.</h3>
+                    <article class="service-row reveal">
+                        <span class="num">03</span>
+                        <div>
+                            <h3 class="name"><em>Dashboards</em></h3>
+                            <div class="tags">
+                                <span>operations</span>
+                                <span>inventory</span>
+                                <span>reporting</span>
+                            </div>
+                        </div>
+                        <p class="desc">Readable data views for operations, inventory, and reporting. Built to be scanned, not stared at.</p>
+                        <span class="arrow" aria-hidden="true">→</span>
                     </article>
-                    <article>
-                        <span>Websites</span>
-                        <h3>Product pages, company profiles, and launch pages that explain the offer fast.</h3>
+                    <article class="service-row reveal">
+                        <span class="num">04</span>
+                        <div>
+                            <h3 class="name">Websites</h3>
+                            <div class="tags">
+                                <span>product</span>
+                                <span>company</span>
+                                <span>launch</span>
+                            </div>
+                        </div>
+                        <p class="desc">Product pages, company profiles, and launch pages that explain the offer fast — without the usual marketing-template feel.</p>
+                        <span class="arrow" aria-hidden="true">→</span>
                     </article>
                 </div>
             </div>
@@ -148,49 +250,72 @@
 
         <section class="work section" id="work">
             <div class="container">
-                <div class="work-head reveal">
-                    <p class="eyebrow">selected work</p>
-                    <h2>Interfaces are shown at their real shape, so the work is easy to judge.</h2>
+                <div class="work-head">
+                    <div class="reveal">
+                        <p class="eyebrow">selected work</p>
+                        <h2 class="section-headline">Interfaces are shown at their <em>real shape</em>, so the work is easy to judge.</h2>
+                    </div>
+                    <div class="work-counter reveal">
+                        showing <strong>04</strong> of <strong>12+</strong> projects
+                    </div>
                 </div>
-                <div class="case-studies reveal">
-                    <article class="case-feature">
+                <div class="case-grid">
+                    <article class="case case-feature reveal">
                         <figure>
                             <img src="./images/portfolio-king-trading-dashboard.png" alt="King Trading KITE dashboard interface">
                         </figure>
-                        <div>
-                            <span>dashboard</span>
-                            <h3>King Trading KITE dashboard</h3>
-                            <p>Authenticated operational dashboard for import, inventory, and KITE reporting workflows.</p>
+                        <div class="case-body">
+                            <div class="meta">
+                                <span class="cat">dashboard</span>
+                                <span class="num">case · 01</span>
+                            </div>
+                            <h3>King Trading — KITE dashboard</h3>
+                            <p>Authenticated operational dashboard for import, inventory, and KITE reporting workflows. Built for the operators who actually run the numbers, not the people who quote them.</p>
                         </div>
                     </article>
-                    <article>
+                    <article class="case case-side reveal">
                         <figure>
                             <img src="./images/portfolio-bidc-bali.png" alt="Bali International Dental Center website homepage">
                         </figure>
-                        <div>
-                            <span>healthcare website</span>
+                        <div class="case-body">
+                            <div class="meta">
+                                <span class="cat">healthcare</span>
+                                <span class="num">case · 02</span>
+                            </div>
                             <h3>Bali International Dental Center</h3>
-                            <a class="case-link" href="https://bidcbali.com" target="_blank" rel="noopener noreferrer">Visit website</a>
+                            <a class="case-link" href="https://bidcbali.com" target="_blank" rel="noopener noreferrer">
+                                Visit website <span class="arrow" aria-hidden="true">↗</span>
+                            </a>
                         </div>
                     </article>
-                    <article>
+                    <article class="case case-side reveal">
                         <figure>
                             <img src="./images/portfolio-bali-tao-center.png" alt="Bali TAO Center spa website homepage">
                         </figure>
-                        <div>
-                            <span>wellness website</span>
+                        <div class="case-body">
+                            <div class="meta">
+                                <span class="cat">wellness</span>
+                                <span class="num">case · 03</span>
+                            </div>
                             <h3>Bali TAO Center</h3>
-                            <a class="case-link" href="https://balitaocenter.com" target="_blank" rel="noopener noreferrer">Visit website</a>
+                            <a class="case-link" href="https://balitaocenter.com" target="_blank" rel="noopener noreferrer">
+                                Visit website <span class="arrow" aria-hidden="true">↗</span>
+                            </a>
                         </div>
                     </article>
-                    <article>
+                    <article class="case case-side reveal">
                         <figure>
                             <img src="./images/portfolio-mahkota-selera.png" alt="Mahkota Selera food ordering website interface">
                         </figure>
-                        <div>
-                            <span>ordering web app</span>
+                        <div class="case-body">
+                            <div class="meta">
+                                <span class="cat">ordering · web app</span>
+                                <span class="num">case · 04</span>
+                            </div>
                             <h3>Mahkota Selera</h3>
-                            <a class="case-link" href="https://mahkota-selera.vercel.app" target="_blank" rel="noopener noreferrer">Visit website</a>
+                            <a class="case-link" href="https://mahkota-selera.vercel.app" target="_blank" rel="noopener noreferrer">
+                                Visit website <span class="arrow" aria-hidden="true">↗</span>
+                            </a>
                         </div>
                     </article>
                 </div>
@@ -198,14 +323,22 @@
         </section>
 
         <section class="contact section" id="contact">
-            <div class="container brief-panel reveal">
-                <div>
+            <div class="container brief-panel">
+                <div class="left reveal">
                     <p class="eyebrow dark">start with a brief</p>
-                    <h2>Tell us what the work looks like today.</h2>
+                    <h2 class="section-headline">Tell us what the work <em>looks like</em> today.</h2>
                 </div>
-                <div>
+                <div class="right reveal">
                     <p>Send the current process, a rough screen, or the tool your team has outgrown. We will suggest the first build scope.</p>
-                    <a class="button dark-action" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">Send the brief</a>
+                    <a class="button dark-action" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">
+                        Send the brief <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+                    <div class="brief-ps">
+                        <strong>P.S. — currently in studio</strong>
+                        <span>KITE v2 · King Trading</span> &nbsp;·&nbsp;
+                        <span>BIDC redesign</span> &nbsp;·&nbsp;
+                        one more slot open this quarter.
+                    </div>
                 </div>
             </div>
         </section>
@@ -213,78 +346,166 @@
 
     <footer class="site-footer">
         <div class="container footer-wrap">
-            <div class="footer-statement">
+            <div class="footer-statement reveal">
                 <p class="eyebrow dark">kaev &amp; co.</p>
-                <h2>Build the tool your team keeps working around.</h2>
+                <h2>Build the tool your team keeps <em>working around</em>.</h2>
             </div>
             <div class="footer-grid">
                 <div>
-                    <span>Studio</span>
+                    <span class="label">Studio</span>
                     <p>Kolaborasi Eka dan Kevin<br>Bali software house</p>
+                    <span class="footer-status">
+                        <span class="dot" aria-hidden="true"></span>open for new work
+                    </span>
                 </div>
                 <address>
-                    <span>Location</span>
-                    Jl. Pendidikan II, Sadewa Green Mansion 20<br>
-                    Sidakarya, South Denpasar, 80224
+                    <span class="label">Location</span>
+                    Jl. Pendidikan II,<br>
+                    Sadewa Green Mansion 20<br>
+                    Sidakarya, South Denpasar<br>
+                    80224 · Bali, Indonesia
                 </address>
-                <div class="footer-contact">
-                    <span>Contact</span>
+                <div>
+                    <span class="label">Contact</span>
                     <a href="tel:+6288103704906">+62&nbsp;881&#8209;0370&#8209;4906</a>
                     <a class="footer-social-link" href="https://wa.me/62881037074906" target="_blank" rel="noopener noreferrer">
-                        <img src="./images/icon-whatsapp.svg" alt="WhatsApp icon">
-                        WhatsApp
+                        <img src="./images/icon-whatsapp.svg" alt="">WhatsApp
                     </a>
                     <a class="footer-social-link" href="https://www.instagram.com/kaevnco/" target="_blank" rel="noopener noreferrer">
-                        <img src="./images/icon-instagram.svg" alt="Instagram icon">
-                        Instagram
+                        <img src="./images/icon-instagram.svg" alt="">Instagram
                     </a>
+                </div>
+                <div>
+                    <span class="label">Local time</span>
+                    <p><span id="bali-time-foot">--:--</span> WITA<br>UTC+8 · Denpasar</p>
+                    <a href="#home">Back to top ↑</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <img src="./images/black-kaev-logo.png" alt="KAEV & CO.">
-                <a href="#home">Back to top</a>
+                <div class="right">
+                    <span>© <span id="year">2025</span> Kaev &amp; Co.</span>
+                    <a href="#home">kaev.co</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        const header = document.querySelector('.site-header');
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelectorAll('.site-nav a');
-        const sections = document.querySelectorAll('main section[id]');
+        (() => {
+            const header = document.querySelector('.site-header');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelectorAll('.site-nav a');
+            const sections = document.querySelectorAll('main section[id]');
+            const progress = document.querySelector('.scroll-progress');
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        menuToggle.addEventListener('click', () => {
-            const isOpen = header.dataset.menuOpen === 'true';
-            header.setAttribute('data-menu-open', String(!isOpen));
-            menuToggle.setAttribute('aria-expanded', String(!isOpen));
-            menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
-        });
-
-        navLinks.forEach((link) => {
-            link.addEventListener('click', () => {
-                header.setAttribute('data-menu-open', 'false');
-                menuToggle.setAttribute('aria-expanded', 'false');
-                menuToggle.setAttribute('aria-label', 'Open navigation');
-            });
-        });
-
-        const updateActiveNav = () => {
-            header.dataset.elevated = window.scrollY > 20 ? 'true' : 'false';
-
-            let current = 'home';
-            sections.forEach((section) => {
-                if (window.scrollY >= section.offsetTop - 180) {
-                    current = section.id;
-                }
+            menuToggle?.addEventListener('click', () => {
+                const isOpen = header.dataset.menuOpen === 'true';
+                header.setAttribute('data-menu-open', String(!isOpen));
+                menuToggle.setAttribute('aria-expanded', String(!isOpen));
+                menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
             });
 
             navLinks.forEach((link) => {
-                link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+                link.addEventListener('click', () => {
+                    header.setAttribute('data-menu-open', 'false');
+                    menuToggle?.setAttribute('aria-expanded', 'false');
+                });
             });
-        };
 
-        window.addEventListener('scroll', updateActiveNav);
-        updateActiveNav();
+            let ticking = false;
+            const onScroll = () => {
+                if (ticking) return;
+                ticking = true;
+                requestAnimationFrame(() => {
+                    const y = window.scrollY;
+                    header.dataset.elevated = y > 20 ? 'true' : 'false';
+                    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const pct = docHeight > 0 ? Math.min(100, (y / docHeight) * 100) : 0;
+                    progress?.style.setProperty('--progress', pct.toFixed(2) + '%');
+                    let current = 'home';
+                    sections.forEach((section) => {
+                        if (y >= section.offsetTop - 200) current = section.id;
+                    });
+                    navLinks.forEach((link) => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+                    });
+                    ticking = false;
+                });
+            };
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            if (!prefersReduced && 'IntersectionObserver' in window) {
+                const revealIO = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-in');
+                            revealIO.unobserve(entry.target);
+                        }
+                    });
+                }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+                document.querySelectorAll('.reveal').forEach((el) => revealIO.observe(el));
+            } else {
+                document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+            }
+
+            const timeline = document.getElementById('timeline');
+            if (timeline && !prefersReduced) {
+                const steps = timeline.querySelectorAll('.timeline-step');
+                const updateTimeline = () => {
+                    const rect = timeline.getBoundingClientRect();
+                    const vh = window.innerHeight;
+                    const center = vh * 0.45;
+                    const total = rect.height;
+                    const traveled = Math.max(0, Math.min(total, center - rect.top));
+                    const pct = total > 0 ? (traveled / total) * 100 : 0;
+                    timeline.style.setProperty('--progress', pct.toFixed(2) + '%');
+                    steps.forEach((step) => {
+                        const sRect = step.getBoundingClientRect();
+                        const active = sRect.top < center && sRect.bottom > 80;
+                        step.setAttribute('data-active', active ? 'true' : 'false');
+                    });
+                };
+                window.addEventListener('scroll', updateTimeline, { passive: true });
+                window.addEventListener('resize', updateTimeline);
+                updateTimeline();
+            }
+
+            const fmt = new Intl.DateTimeFormat('en-GB', {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false,
+                timeZone: 'Asia/Makassar'
+            });
+            const tickClock = () => {
+                const t = fmt.format(new Date());
+                const headEl = document.getElementById('bali-time');
+                const footEl = document.getElementById('bali-time-foot');
+                if (headEl) headEl.textContent = t;
+                if (footEl) footEl.textContent = t;
+            };
+            tickClock();
+            setInterval(tickClock, 30 * 1000);
+
+            const yEl = document.getElementById('year');
+            if (yEl) yEl.textContent = String(new Date().getFullYear());
+
+            if (!prefersReduced && window.matchMedia('(hover: hover)').matches) {
+                document.querySelectorAll('.button.primary, .button.dark-action').forEach((btn) => {
+                    btn.addEventListener('mousemove', (e) => {
+                        const r = btn.getBoundingClientRect();
+                        const x = (e.clientX - r.left - r.width / 2) * 0.08;
+                        const y = (e.clientY - r.top - r.height / 2) * 0.08;
+                        btn.style.transform = `translate(${x.toFixed(1)}px, ${(y - 2).toFixed(1)}px)`;
+                    });
+                    btn.addEventListener('mouseleave', () => {
+                        btn.style.transform = '';
+                    });
+                });
+            }
+        })();
     </script>
 </body>
 </html>
